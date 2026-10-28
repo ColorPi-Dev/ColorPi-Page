@@ -1,0 +1,77 @@
+:root {
+  color-scheme: light dark;
+  --bg-color: light-dark(#c461c4, #5f2e5f);
+  --text-color: light-dark(black, white);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
+
+.margin-top {
+    margin-top: 30px;
+}
+
+.box {
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 30%;
+    padding: 20px;
+}
+
+.box .logo {
+    width: 30%;
+    height: 30%;
+}
+
+.products {
+    display: flex;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; 
+}
+
+.products .item {
+    width: calc(50% - 8px); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.products .item a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.products .item img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.products .item .soon {
+    padding: 10px;
+    width: 130px;
+    height: 100px;
+}
+
+.products .item span {
+    padding: 10px;
+}
